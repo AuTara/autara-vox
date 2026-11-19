@@ -1,0 +1,250 @@
+{
+  "run_tag": "exp1_inner_mem_transfer",
+  "memory_pretrained": true,
+  "train_trials": 4000,
+  "test_trials": 1640,
+  "stream_ablation": {
+    "dual": {
+      "word_acc": 31.097560975609756,
+      "word_f1": 29.5232497788802,
+      "cond_acc": 69.08536585365853,
+      "cond_f1": 73.66631760614733,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 57.012195121951216,
+          "macro_f1": 56.741149662630995
+        },
+        "inner": {
+          "acc": 25.14792899408284,
+          "macro_f1": 22.638004598311007
+        },
+        "visualized": {
+          "acc": 24.056603773584907,
+          "macro_f1": 21.91846430297143
+        }
+      },
+      "center_weights": {
+        "speech": 0.10778741538524628,
+        "auditory": 0.5410348773002625,
+        "visual": 0.2225213199853897,
+        "memory": 0.12865637242794037
+      },
+      "stream_weights": {
+        "pure_eeg": 0.04488532990217209,
+        "jaw_emg": 0.9551146626472473
+      }
+    },
+    "pure_eeg": {
+      "word_acc": 25.0609756097561,
+      "word_f1": 23.48976249250992,
+      "cond_acc": 55.304878048780495,
+      "cond_f1": 56.02841675815039,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 27.743902439024392,
+          "macro_f1": 24.68433922459487
+        },
+        "inner": {
+          "acc": 23.816568047337277,
+          "macro_f1": 21.64018221952385
+        },
+        "visualized": {
+          "acc": 25.0,
+          "macro_f1": 23.40930397700968
+        }
+      },
+      "center_weights": {
+        "speech": 0.10778741538524628,
+        "auditory": 0.5410348773002625,
+        "visual": 0.2225213199853897,
+        "memory": 0.12865637242794037
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "jaw_only": {
+      "word_acc": 31.76829268292683,
+      "word_f1": 26.345509182890936,
+      "cond_acc": 66.64634146341464,
+      "cond_f1": 70.89714091106391,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 60.97560975609756,
+          "macro_f1": 58.40499024289269
+        },
+        "inner": {
+          "acc": 25.295857988165682,
+          "macro_f1": 15.333536940326741
+        },
+        "visualized": {
+          "acc": 23.58490566037736,
+          "macro_f1": 15.509629821124953
+        }
+      },
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 0.0,
+        "jaw_emg": 1.0
+      }
+    },
+    "noise_control": {
+      "word_acc": 25.609756097560975,
+      "word_f1": 16.666958884895237,
+      "cond_acc": 26.21951219512195,
+      "cond_f1": 23.036408028905388,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 25.0,
+          "macro_f1": 15.690853489018625
+        },
+        "inner": {
+          "acc": 26.331360946745562,
+          "macro_f1": 17.21128049157425
+        },
+        "visualized": {
+          "acc": 25.157232704402517,
+          "macro_f1": 16.503500340660192
+        }
+      },
+      "center_weights": {
+        "speech": 0.49183905124664307,
+        "auditory": 0.3471275568008423,
+        "visual": 0.08089038729667664,
+        "memory": 0.0801430270075798
+      },
+      "stream_weights": {
+        "pure_eeg": 0.027233019471168518,
+        "jaw_emg": 0.9727669954299927
+      }
+    }
+  },
+  "four_center_ablation": {
+    "speech": {
+      "word_acc": 26.03658536585366,
+      "word_f1": 24.062344869583654,
+      "cond_acc": 41.036585365853654,
+      "cond_f1": 28.574349122227865,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 24.085365853658537,
+          "macro_f1": 23.7317489549343
+        },
+        "inner": {
+          "acc": 26.331360946745562,
+          "macro_f1": 23.707245189975122
+        },
+        "visualized": {
+          "acc": 26.729559748427672,
+          "macro_f1": 24.074587758732886
+        }
+      },
+      "center_weights": {
+        "speech": 1.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "auditory": {
+      "word_acc": 24.634146341463413,
+      "word_f1": 22.35715340455519,
+      "cond_acc": 45.0609756097561,
+      "cond_f1": 45.28800619290956,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 27.439024390243905,
+          "macro_f1": 24.057541208518483
+        },
+        "inner": {
+          "acc": 21.597633136094675,
+          "macro_f1": 19.797363642803546
+        },
+        "visualized": {
+          "acc": 26.41509433962264,
+          "macro_f1": 24.056979525827476
+        }
+      },
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 1.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "visual": {
+      "word_acc": 24.817073170731707,
+      "word_f1": 23.704615890380897,
+      "cond_acc": 45.548780487804876,
+      "cond_f1": 45.13794792824193,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 26.52439024390244,
+          "macro_f1": 23.85906742984783
+        },
+        "inner": {
+          "acc": 24.2603550295858,
+          "macro_f1": 22.89813417003776
+        },
+        "visualized": {
+          "acc": 24.528301886792452,
+          "macro_f1": 23.933517335714146
+        }
+      },
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 1.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "memory": {
+      "word_acc": 24.329268292682926,
+      "word_f1": 21.815053035806574,
+      "cond_acc": 37.5609756097561,
+      "cond_f1": 35.851764376899894,
+      "per_condition_word": {
+        "pronounced": {
+          "acc": 26.82926829268293,
+          "macro_f1": 22.39353541544776
+        },
+        "inner": {
+          "acc": 22.928994082840237,
+          "macro_f1": 20.361276619486112
+        },
+        "visualized": {
+          "acc": 24.528301886792452,
+          "macro_f1": 22.4595119355409
+        }
+      },
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 1.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    }
+  }
+}

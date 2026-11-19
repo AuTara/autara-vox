@@ -1,0 +1,64 @@
+{
+  "epoch": 20,
+  "run_name": "exp1_inner_mem_transfer",
+  "status": "HEALTHY",
+  "alerts": [],
+  "real_metrics": {
+    "acc": 29.878048780487802,
+    "word_f1": 24.035087634790997,
+    "cond_acc": 65.60975609756098,
+    "cond_f1": 70.06982440891777,
+    "pronounced_word_acc": 46.34146341463415,
+    "inner_word_acc": 25.443786982248522,
+    "visualized_word_acc": 26.10062893081761
+  },
+  "noise_control_metrics": {
+    "acc": 24.45121951219512,
+    "cond_acc": 37.6219512195122
+  },
+  "neural_gain_over_noise": {
+    "acc": 5.427
+  },
+  "stream_ablation": {
+    "dual": {
+      "word_acc": 29.878048780487802,
+      "cond_acc": 65.60975609756098
+    },
+    "pure_eeg": {
+      "word_acc": 26.21951219512195,
+      "cond_acc": 51.768292682926834
+    },
+    "jaw_only": {
+      "word_acc": 29.634146341463413,
+      "cond_acc": 63.23170731707317
+    }
+  },
+  "center_weights": {
+    "speech": 0.17090125381946564,
+    "auditory": 0.47180500626564026,
+    "visual": 0.22629661858081818,
+    "memory": 0.13099709153175354
+  },
+  "sample_decodings": [
+    {
+      "gt": "Right [Pronounced (Overt+Jaw)]",
+      "generated": "Right [Inner Speech (Covert)]"
+    },
+    {
+      "gt": "Up [Pronounced (Overt+Jaw)]",
+      "generated": "Up [Pronounced (Overt+Jaw)]"
+    },
+    {
+      "gt": "Down [Pronounced (Overt+Jaw)]",
+      "generated": "Down [Pronounced (Overt+Jaw)]"
+    },
+    {
+      "gt": "Left [Pronounced (Overt+Jaw)]",
+      "generated": "Left [Pronounced (Overt+Jaw)]"
+    },
+    {
+      "gt": "Left [Pronounced (Overt+Jaw)]",
+      "generated": "Right [Pronounced (Overt+Jaw)]"
+    }
+  ]
+}

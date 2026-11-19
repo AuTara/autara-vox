@@ -1,0 +1,364 @@
+{
+  "dataset": "ds004408_NaturalisticSpeech",
+  "train_windows": 4254,
+  "unseen_sentence_windows": 1092,
+  "unseen_subject_windows": 364,
+  "phoneme_vocab_size": 64,
+  "train_wall_sec": 445.5,
+  "unseen_sentences": {
+    "dual": {
+      "top1": 0.6410256493836641,
+      "top5": 3.6630038172006607,
+      "top10": 5.95238097012043,
+      "mrr": 3.4383323043584824,
+      "cos_sim": 0.026046281680464745,
+      "gallery_size": 182,
+      "bleu1": 9.915089867169572,
+      "bleu2": 3.860037060545803,
+      "bleu4": 2.0780117518501826,
+      "rouge1": 11.612957048728182,
+      "rouge2": 1.5876426205373575,
+      "rougeL": 11.136396019178022,
+      "wer": 106.3109954456734,
+      "cer": 78.74933757286698,
+      "diversity": 2.5,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.028145473450422287,
+        "auditory": 0.9637693762779236,
+        "visual": 0.0056596966460347176,
+        "memory": 0.002425545360893011
+      },
+      "stream_weights": {
+        "pure_eeg": 0.43693506717681885,
+        "jaw_emg": 0.5630649924278259
+      }
+    },
+    "pure_eeg": {
+      "top1": 0.6410256493836641,
+      "top5": 3.113553114235401,
+      "top10": 5.95238097012043,
+      "mrr": 3.4102000296115875,
+      "cos_sim": 0.021610228344798088,
+      "gallery_size": 182,
+      "bleu1": 8.597590981409352,
+      "bleu2": 3.6447497205259394,
+      "bleu4": 2.1367939943340835,
+      "rouge1": 10.585374197339133,
+      "rouge2": 1.5689310689310687,
+      "rougeL": 10.090626493352298,
+      "wer": 102.99284320104098,
+      "cer": 78.36512983571808,
+      "diversity": 2.5,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.028145473450422287,
+        "auditory": 0.9637693762779236,
+        "visual": 0.0056596966460347176,
+        "memory": 0.002425545360893011
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "jaw_only": {
+      "top1": 0.4578754771500826,
+      "top5": 2.838827855885029,
+      "top10": 5.311355367302895,
+      "mrr": 3.1664103269577026,
+      "cos_sim": 0.02664298750460148,
+      "gallery_size": 182,
+      "bleu1": 7.220359317778794,
+      "bleu2": 2.1875260901903353,
+      "bleu4": 1.200968460856591,
+      "rouge1": 8.431246721890231,
+      "rouge2": 0.26275917065390747,
+      "rougeL": 8.154125745040993,
+      "wer": 112.4918672739102,
+      "cer": 84.18124006359301,
+      "diversity": 2.5,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 0.0,
+        "jaw_emg": 1.0
+      }
+    },
+    "noise_control": {
+      "top1": 0.8241758681833744,
+      "top5": 2.5641025975346565,
+      "top10": 5.494505539536476,
+      "mrr": 3.2754477113485336,
+      "cos_sim": 0.012830658815801144,
+      "gallery_size": 182,
+      "bleu1": 7.766861359031482,
+      "bleu2": 3.1265873670815028,
+      "bleu4": 1.8657685005627034,
+      "rouge1": 9.74755567640209,
+      "rouge2": 1.1386089400795283,
+      "rougeL": 9.408485628092912,
+      "wer": 103.7085230969421,
+      "cer": 80.08744038155803,
+      "diversity": 1.25,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.04067206010222435,
+        "auditory": 0.9461050629615784,
+        "visual": 0.009866093285381794,
+        "memory": 0.0033568597864359617
+      },
+      "stream_weights": {
+        "pure_eeg": 0.17497625946998596,
+        "jaw_emg": 0.8250235915184021
+      }
+    }
+  },
+  "unseen_subjects": {
+    "dual": {
+      "top1": 0.5494505632668734,
+      "top5": 2.4725275114178658,
+      "top10": 5.219780281186104,
+      "mrr": 3.1439170241355896,
+      "cos_sim": 0.01008750032633543,
+      "gallery_size": 182,
+      "bleu1": 6.847334843811787,
+      "bleu2": 2.542125106224856,
+      "bleu4": 1.3931409000984454,
+      "rouge1": 8.69041352219659,
+      "rouge2": 0.6551535087719299,
+      "rougeL": 8.246396488505644,
+      "wer": 108.05801772763901,
+      "cer": 82.97802558215808,
+      "diversity": 3.125,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0024356357753276825,
+        "auditory": 0.996740460395813,
+        "visual": 0.00018387605086900294,
+        "memory": 0.0006399062694981694
+      },
+      "stream_weights": {
+        "pure_eeg": 0.8102858066558838,
+        "jaw_emg": 0.1897142082452774
+      }
+    },
+    "pure_eeg": {
+      "top1": 0.8241758681833744,
+      "top5": 2.1978022530674934,
+      "top10": 5.219780281186104,
+      "mrr": 3.197375312447548,
+      "cos_sim": 0.006554394494742155,
+      "gallery_size": 182,
+      "bleu1": 7.0265844253633745,
+      "bleu2": 2.8331940252568684,
+      "bleu4": 1.7240959469615431,
+      "rouge1": 8.978905184043514,
+      "rouge2": 1.1724357057416268,
+      "rougeL": 8.612674946889365,
+      "wer": 108.8638195004029,
+      "cer": 83.19121023286323,
+      "diversity": 3.125,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0024356357753276825,
+        "auditory": 0.996740460395813,
+        "visual": 0.00018387605086900294,
+        "memory": 0.0006399062694981694
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "noise_control": {
+      "top1": 0.5494505632668734,
+      "top5": 2.4725275114178658,
+      "top10": 6.043956056237221,
+      "mrr": 3.171968460083008,
+      "cos_sim": 0.012483821250498295,
+      "gallery_size": 182,
+      "bleu1": 6.388154104143381,
+      "bleu2": 2.4997697537680117,
+      "bleu4": 1.5525852365335955,
+      "rouge1": 8.315646378323576,
+      "rouge2": 0.7682291666666667,
+      "rougeL": 8.023526813106185,
+      "wer": 104.27074939564866,
+      "cer": 80.00983929157101,
+      "diversity": 1.5625,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.04045458510518074,
+        "auditory": 0.946351945400238,
+        "visual": 0.009812011383473873,
+        "memory": 0.003381464397534728
+      },
+      "stream_weights": {
+        "pure_eeg": 0.1754339188337326,
+        "jaw_emg": 0.8245661854743958
+      }
+    }
+  },
+  "four_center_ablation": {
+    "speech": {
+      "top1": 0.5494505632668734,
+      "top5": 2.747252769768238,
+      "top10": 5.494505539536476,
+      "mrr": 3.181781992316246,
+      "cos_sim": 0.008678678423166275,
+      "gallery_size": 182,
+      "bleu1": 9.965805066037419,
+      "bleu2": 3.4688684996780794,
+      "bleu4": 1.9519086283949483,
+      "rouge1": 11.651526207028713,
+      "rouge2": 1.0615079365079363,
+      "rougeL": 10.610600916961548,
+      "wer": 106.45855758880516,
+      "cer": 78.33370068327088,
+      "diversity": 3.125,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 1.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "auditory": {
+      "top1": 0.6410256493836641,
+      "top5": 3.0219780281186104,
+      "top10": 5.219780281186104,
+      "mrr": 3.2796762883663177,
+      "cos_sim": 0.02556893415749073,
+      "gallery_size": 182,
+      "bleu1": 7.163256459566847,
+      "bleu2": 2.6813532724514717,
+      "bleu4": 1.5849471141749938,
+      "rouge1": 9.005873545681647,
+      "rouge2": 1.0089869281045751,
+      "rougeL": 8.591219761462643,
+      "wer": 107.21205597416576,
+      "cer": 81.37535816618912,
+      "diversity": 4.166666666666666,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 1.0,
+        "visual": 0.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "visual": {
+      "top1": 0.7326007355004549,
+      "top5": 3.0219780281186104,
+      "top10": 5.677655711770058,
+      "mrr": 3.4320060163736343,
+      "cos_sim": 0.012657947838306427,
+      "gallery_size": 182,
+      "bleu1": 7.871848637385899,
+      "bleu2": 2.3350269975922684,
+      "bleu4": 1.2976690363092276,
+      "rouge1": 9.322665155970446,
+      "rouge2": 0.34430438842203553,
+      "rougeL": 8.742832800322873,
+      "wer": 109.79547900968785,
+      "cer": 81.24311218867093,
+      "diversity": 4.166666666666666,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 1.0,
+        "memory": 0.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    },
+    "memory": {
+      "top1": 0.5494505632668734,
+      "top5": 2.9304029420018196,
+      "top10": 4.9450550228357315,
+      "mrr": 3.2108746469020844,
+      "cos_sim": 0.026544691994786263,
+      "gallery_size": 182,
+      "bleu1": 11.82113181694389,
+      "bleu2": 3.671237429893974,
+      "bleu4": 1.9026555717005698,
+      "rouge1": 13.508473097343574,
+      "rouge2": 0.9336684235097549,
+      "rougeL": 12.03141431093124,
+      "wer": 113.13240043057051,
+      "cer": 81.75005510249063,
+      "diversity": 3.125,
+      "per": 100.0,
+      "center_weights": {
+        "speech": 0.0,
+        "auditory": 0.0,
+        "visual": 0.0,
+        "memory": 1.0
+      },
+      "stream_weights": {
+        "pure_eeg": 1.0,
+        "jaw_emg": 0.0
+      }
+    }
+  },
+  "qualitative_examples": [
+    {
+      "gt": "before it was really light he had his baits",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.089",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1"
+    },
+    {
+      "gt": "light he had his baits out and was drifting with the current",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.082",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B"
+    },
+    {
+      "gt": "with the current one bait was down forty",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.082",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N"
+    },
+    {
+      "gt": "bait was down forty fathoms the second was at seventy",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.090",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1"
+    },
+    {
+      "gt": "the second was at seventy five and the third and fourth were down",
+      "retrieved": "moment now the sun would rise the",
+      "sim": "0.081",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1"
+    }
+  ]
+}

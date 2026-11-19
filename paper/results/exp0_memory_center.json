@@ -1,0 +1,7 @@
+{
+  "dataset": "ds003655_VerbalWorkingMemory",
+  "train_trials": 1080,
+  "test_trials": 360,
+  "best_unseen_subject_task_acc": 63.05555555555556,
+  "last_load_3cls_acc": 33.88888888888889
+}

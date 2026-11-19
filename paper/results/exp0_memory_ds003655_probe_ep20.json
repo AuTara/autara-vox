@@ -1,0 +1,26 @@
+{
+  "epoch": 20,
+  "run_name": "exp0_memory_ds003655",
+  "status": "HEALTHY",
+  "alerts": [],
+  "real_metrics": {
+    "acc": 58.611111111111114,
+    "macro_f1": 56.28753738458655,
+    "load_3cls_acc": 29.444444444444446
+  },
+  "noise_control_metrics": {
+    "acc": 50.0,
+    "macro_f1": 33.33333333333333
+  },
+  "neural_gain_over_noise": {
+    "acc": 8.611
+  },
+  "stream_ablation": {},
+  "center_weights": {
+    "speech": 0.4710073173046112,
+    "auditory": 0.31268441677093506,
+    "visual": 0.10249832272529602,
+    "memory": 0.11380990594625473
+  },
+  "sample_decodings": []
+}

@@ -1,0 +1,361 @@
+[
+  {
+    "epoch": 10,
+    "run_name": "exp2_speech_ds004408",
+    "status": "ATTENTION_NEEDED",
+    "alerts": [
+      "LOW_DIVERSITY (4.2% unique outputs \u2014 possible LM collapse)"
+    ],
+    "real_metrics": {
+      "top1": 0.6410256493836641,
+      "top5": 3.6630038172006607,
+      "top10": 5.95238097012043,
+      "mrr": 3.4383323043584824,
+      "cos_sim": 0.026046281680464745,
+      "bleu1": 8.862639737215089,
+      "bleu2": 3.1201582633510982,
+      "bleu4": 1.5542267778517116,
+      "rouge1": 10.091333311894205,
+      "rougeL": 9.91394804619372,
+      "wer": 110.97954790096878,
+      "cer": 80.67004628609213,
+      "per": 100.0,
+      "diversity": 4.166666666666666
+    },
+    "noise_control_metrics": {
+      "top1": 0.6410256493836641,
+      "top5": 2.6556776836514473,
+      "top10": 5.311355367302895,
+      "mrr": 3.1932011246681213,
+      "cos_sim": 0.012927056290209293,
+      "bleu1": 6.469155042459214,
+      "bleu2": 2.4046246229717188,
+      "bleu4": 1.4204059089870158,
+      "rouge1": 8.349091676842297,
+      "rougeL": 8.142771225956631,
+      "wer": 104.30570505920345,
+      "cer": 80.33943134229668,
+      "per": 100.0,
+      "diversity": 2.083333333333333
+    },
+    "neural_gain_over_noise": {
+      "top1": 0.0,
+      "top5": 1.007,
+      "top10": 0.641,
+      "bleu1": 2.393,
+      "rougeL": 1.771
+    },
+    "stream_ablation": {
+      "dual": {
+        "top5": 3.6630038172006607,
+        "bleu1": 8.862639737215089,
+        "rougeL": 9.91394804619372,
+        "per": 100.0
+      },
+      "pure_eeg": {
+        "top5": 3.113553114235401,
+        "bleu1": 7.722968476622611,
+        "rougeL": 8.959964314809978,
+        "per": 100.0
+      },
+      "jaw_only": {
+        "top5": 2.838827855885029,
+        "bleu1": 9.919780741342283,
+        "rougeL": 10.675223677120805,
+        "per": 100.0
+      }
+    },
+    "center_weights": {
+      "speech": 0.028145473450422287,
+      "auditory": 0.9637693762779236,
+      "visual": 0.0056596966460347176,
+      "memory": 0.002425545360893011
+    },
+    "sample_decodings": [
+      {
+        "gt": "before it was really light he had his baits",
+        "retrieved": "pencil was looped onto a green sapped stick",
+        "sim": "0.089",
+        "generated": "the old man went out the door the boy came after",
+        "phonemes_pred": "",
+        "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1",
+        "noise_gen": "the old man said happily they lost"
+      },
+      {
+        "gt": "light he had his baits out and was drifting with the current",
+        "retrieved": "pencil was looped onto a green sapped stick",
+        "sim": "0.082",
+        "generated": "the old man went out the door the boy came after",
+        "phonemes_pred": "",
+        "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B",
+        "noise_gen": "i must get your sardines and mine and your fresh baits"
+      },
+      {
+        "gt": "with the current one bait was down forty",
+        "retrieved": "pencil was looped onto a green sapped stick",
+        "sim": "0.082",
+        "generated": "the old man went out the door the boy came after",
+        "phonemes_pred": "",
+        "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N",
+        "noise_gen": "i must get your sardines and mine and your fresh baits"
+      },
+      {
+        "gt": "bait was down forty fathoms the second was at seventy",
+        "retrieved": "pencil was looped onto a green sapped stick",
+        "sim": "0.090",
+        "generated": "the old man went out the door the boy came after",
+        "phonemes_pred": "",
+        "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1",
+        "noise_gen": "the old man said happily they lost"
+      },
+      {
+        "gt": "the second was at seventy five and the third and fourth were down",
+        "retrieved": "moment now the sun would rise the",
+        "sim": "0.081",
+        "generated": "the old man went out the door the boy came after",
+        "phonemes_pred": "",
+        "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1",
+        "noise_gen": "the old man said happily they lost"
+      }
+    ]
+  },
+  {
+    "epoch": 20,
+    "run_name": "exp2_speech_ds004408",
+    "status": "ATTENTION_NEEDED",
+    "alerts": [
+      "LOW_DIVERSITY (5.2% unique outputs \u2014 possible LM collapse)",
+      "NOISE_CONTROL_WARNING (top5 gain vs noise = +0.00%)"
+    ],
+    "real_metrics": {
+      "top1": 0.5494505632668734,
+      "top5": 2.6556776836514473,
+      "top10": 4.76190485060215,
+      "mrr": 3.1261149793863297,
+      "cos_sim": 0.35356074571609497,
+      "bleu1": 5.609043935972199,
+      "bleu2": 1.728740816274343,
+      "bleu4": 1.0012044079534166,
+      "rouge1": 6.837320817454275,
+      "rougeL": 6.305877916219707,
+      "wer": 107.7502691065662,
+      "cer": 84.15252369407096,
+      "per": 94.68121377429254,
+      "diversity": 5.208333333333334
+    },
+    "noise_control_metrics": {
+      "top1": 0.5494505632668734,
+      "top5": 2.6556776836514473,
+      "top10": 5.402930453419685,
+      "mrr": 3.1511876732110977,
+      "cos_sim": 0.37993311882019043,
+      "bleu1": 3.2179497179638994,
+      "bleu2": 0.8973153796477814,
+      "bleu4": 0.5354668103828369,
+      "rouge1": 3.739544591760149,
+      "rougeL": 2.8600815857975306,
+      "wer": 106.45855758880516,
+      "cer": 79.94269340974212,
+      "per": 94.64711899079441,
+      "diversity": 2.083333333333333
+    },
+    "neural_gain_over_noise": {
+      "top1": 0.0,
+      "top5": 0.0,
+      "top10": -0.641,
+      "bleu1": 2.391,
+      "rougeL": 3.446
+    },
+    "stream_ablation": {
+      "dual": {
+        "top5": 2.6556776836514473,
+        "bleu1": 5.609043935972199,
+        "rougeL": 6.305877916219707,
+        "per": 94.68121377429254
+      },
+      "pure_eeg": {
+        "top5": 3.0219780281186104,
+        "bleu1": 8.142684883906986,
+        "rougeL": 9.547773825371108,
+        "per": 92.68408551068885
+      },
+      "jaw_only": {
+        "top5": 2.838827855885029,
+        "bleu1": 3.013362460764067,
+        "rougeL": 3.516631757368019,
+        "per": 94.10926365795724
+      }
+    },
+    "center_weights": {
+      "speech": 0.024971479550004005,
+      "auditory": 0.9620205760002136,
+      "visual": 0.007285737432539463,
+      "memory": 0.005722166504710913
+    },
+    "sample_decodings": [
+      {
+        "gt": "before it was really light he had his baits",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.488",
+        "generated": "i know many tricks and i have resolution",
+        "phonemes_pred": "AH0 AH0",
+        "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1",
+        "noise_gen": "i know but this is in bottles hatuey beer"
+      },
+      {
+        "gt": "light he had his baits out and was drifting with the current",
+        "retrieved": "a big school of dolphin he thought they are",
+        "sim": "0.545",
+        "generated": "i know many tricks and i have resolution",
+        "phonemes_pred": "AH0 AH0",
+        "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B",
+        "noise_gen": "i know but this is in bottles hatuey beer"
+      },
+      {
+        "gt": "with the current one bait was down forty",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.483",
+        "generated": "i know but this is in bottles hatuey beer",
+        "phonemes_pred": "AH0 AH0 AH0 AH0",
+        "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N",
+        "noise_gen": "i know but this is in bottles hatuey beer"
+      },
+      {
+        "gt": "bait was down forty fathoms the second was at seventy",
+        "retrieved": "dolphin the old man said aloud",
+        "sim": "0.487",
+        "generated": "i know but this is in bottles hatuey beer",
+        "phonemes_pred": "AH0 AH0 AH0",
+        "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1",
+        "noise_gen": "i know but this is in bottles hatuey beer"
+      },
+      {
+        "gt": "the second was at seventy five and the third and fourth were down",
+        "retrieved": "a big school of dolphin he thought they are",
+        "sim": "0.538",
+        "generated": "i know many tricks and i have resolution",
+        "phonemes_pred": "AH0 AH0",
+        "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1",
+        "noise_gen": "i know but this is in bottles hatuey beer"
+      }
+    ]
+  },
+  {
+    "epoch": 30,
+    "run_name": "exp2_speech_ds004408",
+    "status": "HEALTHY",
+    "alerts": [],
+    "real_metrics": {
+      "top1": 0.6410256493836641,
+      "top5": 2.9304029420018196,
+      "top10": 5.7692307978868484,
+      "mrr": 3.4102510660886765,
+      "cos_sim": 0.4270225167274475,
+      "bleu1": 7.71425814706496,
+      "bleu2": 2.204245239874738,
+      "bleu4": 1.1850241792528282,
+      "rouge1": 8.649008316441265,
+      "rougeL": 8.032414749189803,
+      "wer": 115.82346609257266,
+      "cer": 86.95173021820585,
+      "per": 92.1581997954313,
+      "diversity": 18.75
+    },
+    "noise_control_metrics": {
+      "top1": 0.2747252816334367,
+      "top5": 2.1978022530674934,
+      "top10": 5.128205195069313,
+      "mrr": 2.9108449816703796,
+      "cos_sim": 0.45659786462783813,
+      "bleu1": 9.175920458168836,
+      "bleu2": 3.3521449403003842,
+      "bleu4": 1.4220602820697514,
+      "rouge1": 10.148158983819906,
+      "rougeL": 9.073806253217176,
+      "wer": 116.79224973089345,
+      "cer": 93.87260304165748,
+      "per": 92.9764745993863,
+      "diversity": 5.208333333333334
+    },
+    "neural_gain_over_noise": {
+      "top1": 0.366,
+      "top5": 0.733,
+      "top10": 0.641,
+      "bleu1": -1.462,
+      "rougeL": -1.041
+    },
+    "stream_ablation": {
+      "dual": {
+        "top5": 2.9304029420018196,
+        "bleu1": 7.71425814706496,
+        "rougeL": 8.032414749189803,
+        "per": 92.1581997954313
+      },
+      "pure_eeg": {
+        "top5": 2.5641025975346565,
+        "bleu1": 11.482951905777236,
+        "rougeL": 11.77020966941275,
+        "per": 88.74109263657958
+      },
+      "jaw_only": {
+        "top5": 2.747252769768238,
+        "bleu1": 10.572717034092003,
+        "rougeL": 10.430352770285383,
+        "per": 91.8289786223278
+      }
+    },
+    "center_weights": {
+      "speech": 0.017105938866734505,
+      "auditory": 0.9703857898712158,
+      "visual": 0.00636305520310998,
+      "memory": 0.006145177409052849
+    },
+    "sample_decodings": [
+      {
+        "gt": "before it was really light he had his baits",
+        "retrieved": "dolphin the old man said aloud",
+        "sim": "0.588",
+        "generated": "the boy said you ll not fish without eating while i m",
+        "phonemes_pred": "AH0 AH0 AH0 AH0",
+        "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1",
+        "noise_gen": "and the noise of the clubbing i can remember you throwing me"
+      },
+      {
+        "gt": "light he had his baits out and was drifting with the current",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.623",
+        "generated": "the old man opened his eyes and for a moment he was",
+        "phonemes_pred": "AH0 AH0 AH0",
+        "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B",
+        "noise_gen": "i remember everything from when we first went"
+      },
+      {
+        "gt": "with the current one bait was down forty",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.624",
+        "generated": "the old man opened his eyes and for a moment he was",
+        "phonemes_pred": "AH0 AH0 AH0 AH0",
+        "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N",
+        "noise_gen": "and the noise of the clubbing i can remember you throwing me"
+      },
+      {
+        "gt": "bait was down forty fathoms the second was at seventy",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.597",
+        "generated": "the boy said but what about the eighty seven of your great",
+        "phonemes_pred": "AH0 AH0",
+        "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1",
+        "noise_gen": "and the noise of the clubbing i can remember you throwing me"
+      },
+      {
+        "gt": "the second was at seventy five and the third and fourth were down",
+        "retrieved": "the flying fish the old man could see",
+        "sim": "0.639",
+        "generated": "the old man opened his eyes and for a moment he was",
+        "phonemes_pred": "AH0 AH0",
+        "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1",
+        "noise_gen": "i remember everything from when we first went"
+      }
+    ]
+  }
+]

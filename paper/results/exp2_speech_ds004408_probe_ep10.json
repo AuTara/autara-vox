@@ -1,0 +1,120 @@
+{
+  "epoch": 10,
+  "run_name": "exp2_speech_ds004408",
+  "status": "ATTENTION_NEEDED",
+  "alerts": [
+    "LOW_DIVERSITY (4.2% unique outputs \u2014 possible LM collapse)"
+  ],
+  "real_metrics": {
+    "top1": 0.6410256493836641,
+    "top5": 3.6630038172006607,
+    "top10": 5.95238097012043,
+    "mrr": 3.4383323043584824,
+    "cos_sim": 0.026046281680464745,
+    "bleu1": 8.862639737215089,
+    "bleu2": 3.1201582633510982,
+    "bleu4": 1.5542267778517116,
+    "rouge1": 10.091333311894205,
+    "rougeL": 9.91394804619372,
+    "wer": 110.97954790096878,
+    "cer": 80.67004628609213,
+    "per": 100.0,
+    "diversity": 4.166666666666666
+  },
+  "noise_control_metrics": {
+    "top1": 0.6410256493836641,
+    "top5": 2.6556776836514473,
+    "top10": 5.311355367302895,
+    "mrr": 3.1932011246681213,
+    "cos_sim": 0.012927056290209293,
+    "bleu1": 6.469155042459214,
+    "bleu2": 2.4046246229717188,
+    "bleu4": 1.4204059089870158,
+    "rouge1": 8.349091676842297,
+    "rougeL": 8.142771225956631,
+    "wer": 104.30570505920345,
+    "cer": 80.33943134229668,
+    "per": 100.0,
+    "diversity": 2.083333333333333
+  },
+  "neural_gain_over_noise": {
+    "top1": 0.0,
+    "top5": 1.007,
+    "top10": 0.641,
+    "bleu1": 2.393,
+    "rougeL": 1.771
+  },
+  "stream_ablation": {
+    "dual": {
+      "top5": 3.6630038172006607,
+      "bleu1": 8.862639737215089,
+      "rougeL": 9.91394804619372,
+      "per": 100.0
+    },
+    "pure_eeg": {
+      "top5": 3.113553114235401,
+      "bleu1": 7.722968476622611,
+      "rougeL": 8.959964314809978,
+      "per": 100.0
+    },
+    "jaw_only": {
+      "top5": 2.838827855885029,
+      "bleu1": 9.919780741342283,
+      "rougeL": 10.675223677120805,
+      "per": 100.0
+    }
+  },
+  "center_weights": {
+    "speech": 0.028145473450422287,
+    "auditory": 0.9637693762779236,
+    "visual": 0.0056596966460347176,
+    "memory": 0.002425545360893011
+  },
+  "sample_decodings": [
+    {
+      "gt": "before it was really light he had his baits",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.089",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1",
+      "noise_gen": "the old man said happily they lost"
+    },
+    {
+      "gt": "light he had his baits out and was drifting with the current",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.082",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B",
+      "noise_gen": "i must get your sardines and mine and your fresh baits"
+    },
+    {
+      "gt": "with the current one bait was down forty",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.082",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N",
+      "noise_gen": "i must get your sardines and mine and your fresh baits"
+    },
+    {
+      "gt": "bait was down forty fathoms the second was at seventy",
+      "retrieved": "pencil was looped onto a green sapped stick",
+      "sim": "0.090",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1",
+      "noise_gen": "the old man said happily they lost"
+    },
+    {
+      "gt": "the second was at seventy five and the third and fourth were down",
+      "retrieved": "moment now the sun would rise the",
+      "sim": "0.081",
+      "generated": "the old man went out the door the boy came after",
+      "phonemes_pred": "",
+      "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1",
+      "noise_gen": "the old man said happily they lost"
+    }
+  ]
+}

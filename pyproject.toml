@@ -1,0 +1,30 @@
+[project]
+name = "autara-vox"
+version = "0.1.0"
+description = "Autara-Vox: Dual-Stream 4-Center Cortical-Articulatory EEG-to-Speech Foundation Model (Autara Research Labs)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.5.0",
+    "transformers>=4.45.0",
+    "mne>=1.8.0",
+    "scipy>=1.13.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scikit-learn>=1.5.0",
+    "boto3>=1.35.0",
+    "matplotlib>=3.9.0",
+    "seaborn>=0.13.0",
+    "jiwer>=3.0.0",
+    "rouge-score>=0.1.2",
+    "nltk>=3.9.0",
+    "soundfile>=0.12.0",
+    "safetensors>=0.4.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

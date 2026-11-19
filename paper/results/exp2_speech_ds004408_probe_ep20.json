@@ -1,0 +1,121 @@
+{
+  "epoch": 20,
+  "run_name": "exp2_speech_ds004408",
+  "status": "ATTENTION_NEEDED",
+  "alerts": [
+    "LOW_DIVERSITY (5.2% unique outputs \u2014 possible LM collapse)",
+    "NOISE_CONTROL_WARNING (top5 gain vs noise = +0.00%)"
+  ],
+  "real_metrics": {
+    "top1": 0.5494505632668734,
+    "top5": 2.6556776836514473,
+    "top10": 4.76190485060215,
+    "mrr": 3.1261149793863297,
+    "cos_sim": 0.35356074571609497,
+    "bleu1": 5.609043935972199,
+    "bleu2": 1.728740816274343,
+    "bleu4": 1.0012044079534166,
+    "rouge1": 6.837320817454275,
+    "rougeL": 6.305877916219707,
+    "wer": 107.7502691065662,
+    "cer": 84.15252369407096,
+    "per": 94.68121377429254,
+    "diversity": 5.208333333333334
+  },
+  "noise_control_metrics": {
+    "top1": 0.5494505632668734,
+    "top5": 2.6556776836514473,
+    "top10": 5.402930453419685,
+    "mrr": 3.1511876732110977,
+    "cos_sim": 0.37993311882019043,
+    "bleu1": 3.2179497179638994,
+    "bleu2": 0.8973153796477814,
+    "bleu4": 0.5354668103828369,
+    "rouge1": 3.739544591760149,
+    "rougeL": 2.8600815857975306,
+    "wer": 106.45855758880516,
+    "cer": 79.94269340974212,
+    "per": 94.64711899079441,
+    "diversity": 2.083333333333333
+  },
+  "neural_gain_over_noise": {
+    "top1": 0.0,
+    "top5": 0.0,
+    "top10": -0.641,
+    "bleu1": 2.391,
+    "rougeL": 3.446
+  },
+  "stream_ablation": {
+    "dual": {
+      "top5": 2.6556776836514473,
+      "bleu1": 5.609043935972199,
+      "rougeL": 6.305877916219707,
+      "per": 94.68121377429254
+    },
+    "pure_eeg": {
+      "top5": 3.0219780281186104,
+      "bleu1": 8.142684883906986,
+      "rougeL": 9.547773825371108,
+      "per": 92.68408551068885
+    },
+    "jaw_only": {
+      "top5": 2.838827855885029,
+      "bleu1": 3.013362460764067,
+      "rougeL": 3.516631757368019,
+      "per": 94.10926365795724
+    }
+  },
+  "center_weights": {
+    "speech": 0.024971479550004005,
+    "auditory": 0.9620205760002136,
+    "visual": 0.007285737432539463,
+    "memory": 0.005722166504710913
+  },
+  "sample_decodings": [
+    {
+      "gt": "before it was really light he had his baits",
+      "retrieved": "the flying fish the old man could see",
+      "sim": "0.488",
+      "generated": "i know many tricks and i have resolution",
+      "phonemes_pred": "AH0 AH0",
+      "phonemes_gt": "B IH0 F AO1 R IH0 T W AH0 Z R IH1",
+      "noise_gen": "i know but this is in bottles hatuey beer"
+    },
+    {
+      "gt": "light he had his baits out and was drifting with the current",
+      "retrieved": "a big school of dolphin he thought they are",
+      "sim": "0.545",
+      "generated": "i know many tricks and i have resolution",
+      "phonemes_pred": "AH0 AH0",
+      "phonemes_gt": "L AY1 T HH IY1 HH AE1 D HH IH0 Z B",
+      "noise_gen": "i know but this is in bottles hatuey beer"
+    },
+    {
+      "gt": "with the current one bait was down forty",
+      "retrieved": "the flying fish the old man could see",
+      "sim": "0.483",
+      "generated": "i know but this is in bottles hatuey beer",
+      "phonemes_pred": "AH0 AH0 AH0 AH0",
+      "phonemes_gt": "T IH0 NG W IH0 TH DH AH0 K ER1 AH0 N",
+      "noise_gen": "i know but this is in bottles hatuey beer"
+    },
+    {
+      "gt": "bait was down forty fathoms the second was at seventy",
+      "retrieved": "dolphin the old man said aloud",
+      "sim": "0.487",
+      "generated": "i know but this is in bottles hatuey beer",
+      "phonemes_pred": "AH0 AH0 AH0",
+      "phonemes_gt": "N B EY1 T W AH0 Z D AW1 N F AO1",
+      "noise_gen": "i know but this is in bottles hatuey beer"
+    },
+    {
+      "gt": "the second was at seventy five and the third and fourth were down",
+      "retrieved": "a big school of dolphin he thought they are",
+      "sim": "0.538",
+      "generated": "i know many tricks and i have resolution",
+      "phonemes_pred": "AH0 AH0",
+      "phonemes_gt": "DH AH0 S EH1 K AH0 N D W AH0 Z AE1",
+      "noise_gen": "i know but this is in bottles hatuey beer"
+    }
+  ]
+}

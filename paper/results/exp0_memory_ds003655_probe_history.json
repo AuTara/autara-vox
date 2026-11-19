@@ -1,0 +1,80 @@
+[
+  {
+    "epoch": 10,
+    "run_name": "exp0_memory_ds003655",
+    "status": "HEALTHY",
+    "alerts": [],
+    "real_metrics": {
+      "acc": 63.05555555555556,
+      "macro_f1": 61.96347285885652,
+      "load_3cls_acc": 29.166666666666668
+    },
+    "noise_control_metrics": {
+      "acc": 51.388888888888886,
+      "macro_f1": 45.19785314764394
+    },
+    "neural_gain_over_noise": {
+      "acc": 11.667
+    },
+    "stream_ablation": {},
+    "center_weights": {
+      "speech": 0.47520267963409424,
+      "auditory": 0.48862335085868835,
+      "visual": 0.019301865249872208,
+      "memory": 0.016872094944119453
+    },
+    "sample_decodings": []
+  },
+  {
+    "epoch": 20,
+    "run_name": "exp0_memory_ds003655",
+    "status": "HEALTHY",
+    "alerts": [],
+    "real_metrics": {
+      "acc": 58.611111111111114,
+      "macro_f1": 56.28753738458655,
+      "load_3cls_acc": 29.444444444444446
+    },
+    "noise_control_metrics": {
+      "acc": 50.0,
+      "macro_f1": 33.33333333333333
+    },
+    "neural_gain_over_noise": {
+      "acc": 8.611
+    },
+    "stream_ablation": {},
+    "center_weights": {
+      "speech": 0.4710073173046112,
+      "auditory": 0.31268441677093506,
+      "visual": 0.10249832272529602,
+      "memory": 0.11380990594625473
+    },
+    "sample_decodings": []
+  },
+  {
+    "epoch": 30,
+    "run_name": "exp0_memory_ds003655",
+    "status": "HEALTHY",
+    "alerts": [],
+    "real_metrics": {
+      "acc": 59.166666666666664,
+      "macro_f1": 56.50851831458181,
+      "load_3cls_acc": 33.88888888888889
+    },
+    "noise_control_metrics": {
+      "acc": 50.83333333333333,
+      "macro_f1": 37.75824175824176
+    },
+    "neural_gain_over_noise": {
+      "acc": 8.333
+    },
+    "stream_ablation": {},
+    "center_weights": {
+      "speech": 0.5681433081626892,
+      "auditory": 0.26839134097099304,
+      "visual": 0.11783640831708908,
+      "memory": 0.04562889039516449
+    },
+    "sample_decodings": []
+  }
+]
